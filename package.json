@@ -1,0 +1,25 @@
+{
+  "name": "pa11y-sample-project",
+  "version": "1.0.0",
+  "description": "A sample web project demonstrating the pa11y accessibility tool.",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel *.html --no-cache",
+    "build": "parcel build *.html --public-url . --no-cache --no-source-maps",
+    "publish": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdlib/pa11y-sample-project.git"
+  },
+  "author": "JoelCDL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdlib/pa11y-sample-project/issues"
+  },
+  "homepage": "https://github.com/cdlib/pa11y-sample-project#readme",
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
