@@ -1,0 +1,29 @@
+---
+title:
+---
+
+{{#extend "base"}}
+  {{#content "maincontent"}}
+    <h2>A Website to Test with Pa11y</h2>
+    <p>These examples can be tested by <a href="https://pa11y.org">Pa11y</a> by downloading <a href="https://github.com/cdlib/pa11y-sample-project">the repository for this website</a> and running the commands from the pa11y-sample-project root directory.</p>
+    <p>Examples on this site are represented as a pair. One page in the pair contains common accessibility errors, the other version of the page doesn't.</p>
+    <h3>Testing One Page at a Time</h3>
+    <ol>
+      <li>
+        <p>Run the following command from your CLI tool:</p>
+        <blockquote>
+          <code>npm run pa11y -- https://cdlib.github.io/pa11y-sample-project/withouterrors1.html</code>
+        </blockquote>
+        <p>After running, Pa11y should return "no issues found".</p>
+      </li>
+      <li>
+        <p>Test another page by running this command:</p>
+        <blockquote>
+          <code>npm run pa11y -- https://cdlib.github.io/pa11y-sample-project/witherrors1.html</code>
+        </blockquote>
+        <p>After running, Pa11y should return one error.</p>
+      </li>
+      <li>Test other pages by replacing the URLs from the command above with other URLs of example pages from this site.</li>
+    </ol>
+  {{/content}}
+{{/extend}}

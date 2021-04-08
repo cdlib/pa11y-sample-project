@@ -1,0 +1,32 @@
+---
+title: Form Labels - Examples With Errors
+---
+
+{{#extend "base"}}
+  {{#content "maincontent"}}
+    <h2>Examples With Errors</h2>
+    <h3>Form Labels</h3>
+    <div class="c-input">
+      <label for="field1">Example 1:</label>
+      <input type="text">
+    </div>
+    <div class="c-input">
+      <label for="field2">Example 2:</label>
+      <select name="" id="field9">
+        <option value="">Apples</option>
+        <option value="">Oranges</option>
+        <option value="">Bananas</option>
+        <option value="">Grapes</option>
+        <option value="">Pineapples</option>
+      </select>
+    </div>
+    <div class="c-input">
+      <label for="field2">Example 3:</label>
+      <textarea name="" id="field3"></textarea>
+    </div>
+    <hr>
+    <p>In the first example, the input <code>id</code> is missing.</p>
+    <p>In the second example, the label is not correctly associated with the input <code>id</code>.</p>
+    <p>In the third example, the label is incorrectly associated with the input from the first example.</p>
+  {{/content}}
+{{/extend}}

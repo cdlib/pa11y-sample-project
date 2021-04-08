@@ -1,0 +1,34 @@
+/* Navigation */
+
+.c-nav {
+  padding-inline-start: var(--space-md);
+
+  ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    &:not(:last-child) {
+      margin-block-end: var(--space-md);
+    }
+  }
+
+  li {
+
+    &:not(:last-child) {
+      margin-block-end: var(--space-base);
+    }
+  }
+
+  a {
+    color: var(--color-blue);
+  }
+
+  h2 {
+    font-size: 1em;
+    font-weight: 500;
+
+    &:first-child {
+      margin-block-start: 0;
+    }
+  }
+}

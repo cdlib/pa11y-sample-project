@@ -1,0 +1,44 @@
+---
+title: Table Headers | Examples Without Errors
+---
+
+{{#extend "base"}}
+  {{#content "maincontent"}}
+    <h2>Examples Without Errors</h2>
+    <h3>Table Headers</h3>
+    <table class="c-table">
+      <tr>
+        <th scope="col">Filename</th>
+        <th scope="col">Status</th>
+        <th scope="col">URL</th>
+        <th scope="col">Type</th>
+      </tr>
+      <tr>
+        <th scope="row">prelim_findings</th>
+        <td>New</td>
+        <td>https://usercontent.example.com/files/...</td>
+        <td>PDF</td>
+      </tr>
+      <tr>
+        <th scope="row">DraftOrder</th>
+        <td>Archived</td>
+        <td>https://filelocker.example.com/files/...</td>
+        <td>DOC</td>
+      </tr>
+      <tr>
+        <th scope="row">debut-files</th>
+        <td>Archived</td>
+        <td>https://box.example.com/files/...</td>
+        <td>ZIP</td>
+      </tr>
+      <tr>
+        <th scope="row">logos</th>
+        <td>New</td>
+        <td>https://dochoarder.example.com/files/...</td>
+        <td>SVG</td>
+      </tr>
+    </table>
+    <hr>
+    <p>This table contains row and column headers.</p>
+  {{/content}}
+{{/extend}}

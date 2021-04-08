@@ -1,0 +1,7 @@
+/* Skip Navigation Styles */
+
+.c-skip {
+  position: absolute;
+  inset-block-start: -9999px;
+  inset-inline-start: -9999px;
+}

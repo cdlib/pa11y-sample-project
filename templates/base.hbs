@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{#if title}}{{ title }} - {{/if}}Pa11y Sample Project</title>
+  <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body>
+  <header class="c-header">
+    <h1>
+      <a href="./index.hbs">Pa11y Sample Project</a>
+    </h1>
+    <a class="c-skip" href="#maincontent">Skip to main content</a>
+  </header>
+  <nav class="c-nav">
+    <h2>Examples Without Errors</h2>
+    <ul>
+      <li><a href="./without-errors1.hbs">Alternative Text</a></li>
+      <li><a href="./without-errors2.hbs">Document Structure</a></li>
+      <li><a href="./without-errors3.hbs">Table Headers</a></li>
+      <li><a href="./without-errors4.hbs">Form Labels</a></li>
+      <li><a href="./without-errors5.hbs">Color Contrast</a></li>
+    </ul>
+    <h2>Examples With Errors</h2>
+    <ul>
+      <li><a href="./with-errors1.hbs">Alternative Text</a></li>
+      <li><a href="./with-errors2.hbs">Document Structure</a></li>
+      <li><a href="./with-errors3.hbs">Table Headers</a></li>
+      <li><a href="./with-errors4.hbs">Form Labels</a></li>
+      <li><a href="./with-errors5.hbs">Color Contrast</a></li>
+    </ul>
+  </nav>
+  <main id="maincontent" class="c-maincontent">
+    {{#block "maincontent"}}
+    {{/block}}
+  </main>
+  <footer class="c-footer">
+    <p><a href="https://github.com/cdlib/pa11y-sample-project">GitHub Repository</a></p>
+    <p>Copyright © The Regents of The University of California</p>
+  </footer>
+</body>
+</html>
