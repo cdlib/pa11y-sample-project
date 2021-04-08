@@ -1,0 +1,82 @@
+{
+  "name": "pa11y-sample-project",
+  "version": "1.0.0",
+  "description": "A sample web project demonstrating the pa11y accessibility tool.",
+  "main": "index.html",
+  "scripts": {
+    "serve": "npm-run-all clean --parallel parcel-dev watchstyles --silent",
+    "build": "run-s clean parcel-build --silent",
+    "publish": "run-s clean parcel-build github-pages --silent",
+    "clean": "del dist",
+    "parcel-dev": "parcel *.hbs --no-cache",
+    "parcel-build": "parcel build *.hbs --public-url . --no-cache --no-source-maps",
+    "watchstyles": "onchange styles/* -- npm run lintstyles",
+    "lintstyles": "stylelint 'styles/*'",
+    "github-pages": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdlib/pa11y-sample-project.git"
+  },
+  "author": "JoelCDL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdlib/pa11y-sample-project/issues"
+  },
+  "homepage": "https://github.com/cdlib/pa11y-sample-project#readme",
+  "devDependencies": {
+    "@layflags/parcel-plugin-handlebars": "^0.6.1",
+    "del-cli": "^3.0.1",
+    "gh-pages": "^3.1.0",
+    "modern-normalize": "^1.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss-logical": "^4.0.2",
+    "sass": "^1.32.8",
+    "stylelint": "^13.12.0",
+    "stylelint-config-property-sort-order-smacss": "^7.0.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-use-logical": "^1.1.0"
+  },
+  "stylelint": {
+    "defaultSeverity": "warning",
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-sass-guidelines",
+      "stylelint-config-property-sort-order-smacss"
+    ],
+    "plugins": [
+      "stylelint-use-logical"
+    ],
+    "rules": {
+      "at-rule-empty-line-before": [
+        "always",
+        {
+          "ignore": [
+            "blockless-after-blockless",
+            "first-nested"
+          ]
+        }
+      ],
+      "csstools/use-logical": "always",
+      "max-nesting-depth": [
+        1,
+        {
+          "ignore": [
+            "pseudo-classes"
+          ],
+          "ignoreAtRules": [
+            "/^includes/",
+            "/^media/",
+            "/^supports/"
+          ]
+        }
+      ],
+      "order/properties-alphabetical-order": null,
+      "selector-class-pattern": null,
+      "rule-empty-line-before": "always"
+    }
+  }
+}
