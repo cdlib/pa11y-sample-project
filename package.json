@@ -13,7 +13,7 @@
     "watchstyles": "onchange styles/* -- npm run lintstyles",
     "lintstyles": "stylelint 'styles/*'",
     "github-pages": "gh-pages -d dist",
-    "pa11y": "pa11y"
+    "pa11y": "pa11y --runner axe --runner htmlcs"
   },
   "repository": {
     "type": "git",
