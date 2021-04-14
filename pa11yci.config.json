@@ -1,0 +1,20 @@
+{
+  "defaults": {
+    "runners": [
+      "axe",
+      "htmlcs"
+    ]
+  },
+  "urls": [
+    "https://cdlib.github.io/pa11y-sample-project/without-errors1.html",
+    "https://cdlib.github.io/pa11y-sample-project/without-errors2.html", 
+    "https://cdlib.github.io/pa11y-sample-project/without-errors3.html",
+    "https://cdlib.github.io/pa11y-sample-project/without-errors4.html",
+    "https://cdlib.github.io/pa11y-sample-project/without-errors5.html",
+    "https://cdlib.github.io/pa11y-sample-project/with-errors1.html",
+    "https://cdlib.github.io/pa11y-sample-project/with-errors2.html",
+    "https://cdlib.github.io/pa11y-sample-project/with-errors3.html",
+    "https://cdlib.github.io/pa11y-sample-project/with-errors4.html",
+    "https://cdlib.github.io/pa11y-sample-project/with-errors5.html"
+  ]
+}
