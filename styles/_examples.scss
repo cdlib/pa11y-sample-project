@@ -49,3 +49,13 @@
 .c-contrast__withouterrors {
   color: var(--color-white);
 }
+
+.c-mobiletest {
+  --display: block;
+
+  @media (min-width: 40rem) {
+    --display: none;
+  }
+
+  display: var(--display);
+}
