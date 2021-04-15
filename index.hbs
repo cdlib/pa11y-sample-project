@@ -21,9 +21,20 @@ title:
         <blockquote>
           <code>npm run pa11y -- https://cdlib.github.io/pa11y-sample-project/with-errors1.html</code>
         </blockquote>
-        <p>After running, Pa11y should return one error.</p>
+        <p>After running, Pa11y should return two errors.</p>
       </li>
       <li>Test other pages by replacing the URLs from the command above with other URLs of example pages from this site.</li>
+    </ol>
+    <h3>Testing All Pages at the Same Time</h3>
+    <ol>
+      <li>
+        <p>Run the following command from your CLI tool:</p>
+        <blockquote>
+          <code>npm run pa11y-ci</code>
+        </blockquote>
+        <p>Pa11y should return "0 errors" for the 5 pages without errors and multiple errors for the 5 pages with errors.</p>
+        <p>Additionally, Pa11y should generate a screen capture of the Document Structure (with errors) page at 400 pixels wide and copy it as a .png file to the pa11y-screencaptures directory of this site's repository.</p>
+      </li>
     </ol>
   {{/content}}
 {{/extend}}
