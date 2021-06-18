@@ -6,10 +6,10 @@
     ]
   },
   "urls": [
-    "https://cdlib.github.io/pa11y-sample-project/without-errors1.html",
-    "https://cdlib.github.io/pa11y-sample-project/without-errors2.html",
+    "http://localhost:1234/without-errors1.html",
+    "http://localhost:1234/without-errors2.html",
     {
-      "url": "https://cdlib.github.io/pa11y-sample-project/without-errors2.html",
+      "url": "http://localhost:1234/without-errors2.html",
       "viewport": {
         "width": 400,
         "height": 800,
@@ -17,8 +17,8 @@
       },
       "screenCapture": "./pa11y-screencaptures/with-errors2-mobile.png"
     },
-    "https://cdlib.github.io/pa11y-sample-project/without-errors3.html",
-    "https://cdlib.github.io/pa11y-sample-project/without-errors4.html",
-    "https://cdlib.github.io/pa11y-sample-project/without-errors5.html"
+    "http://localhost:1234/without-errors3.html",
+    "http://localhost:1234/without-errors4.html",
+    "http://localhost:1234/without-errors5.html"
   ]
 }
