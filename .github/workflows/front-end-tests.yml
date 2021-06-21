@@ -1,11 +1,5 @@
 name: Front End Tests
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: push
 jobs:
   Accessibility:
     runs-on: ubuntu-latest
