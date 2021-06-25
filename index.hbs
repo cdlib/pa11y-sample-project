@@ -5,9 +5,8 @@ title:
 {{#extend "base"}}
   {{#content "maincontent"}}
     <h2>A Website to Test with Pa11y</h2>
-    <p>These examples can be tested by <a href="https://pa11y.org">Pa11y</a> by downloading <a href="https://github.com/cdlib/pa11y-sample-project">the repository for this website</a> and running the commands from the pa11y-sample-project root directory.</p>
-    <p>Examples on this site are represented as a pair. One page in the pair contains common accessibility errors, the other version of the page doesn't.</p>
     <h3>Testing One Page at a Time</h3>
+    <p>These examples can be followed by installing <a href="https://github.com/pa11y/pa11y">Pa11y</a> globally or as a dependency into a project.</p>
     <ol>
       <li>
         <p>Run the following command from your CLI tool:</p>
@@ -25,16 +24,31 @@ title:
       </li>
       <li>Test other pages by replacing the URLs from the command above with other URLs of example pages from this site.</li>
     </ol>
-    <h3>Testing All Pages at the Same Time</h3>
+    <h3>Testing Multiple Pages Manually</h3>
+    <p>This example requires downloading <a href="https://github.com/cdlib/pa11y-sample-project">the repository for this website</a> and running the command from the pa11y-sample-project root directory.</p>
     <ol>
       <li>
         <p>Run the following command from your CLI tool:</p>
         <blockquote>
-          <code>npm run pa11y-ci</code>
+          <code>npm run test-a11y</code>
         </blockquote>
-        <p>Pa11y should return "0 errors" for the 5 pages without errors and multiple errors for the 5 pages with errors.</p>
-        <p>Additionally, Pa11y should generate a screen capture of the Document Structure (with errors) page at 400 pixels wide and copy it as a .png file to the pa11y-screencaptures directory of this site's repository.</p>
+        <p>Pa11y should return "6/6 URLs passed" for the 5 pages in this website without errors.</p>
+        <p>Additionally, Pa11y should generate a screen capture of the Examples Without Errors / Document Structure page at 400 pixels to the pa11y-screencaptures directory of this site's repository.</p>
       </li>
     </ol>
+    <h3>Testing Multiple Pages Automatically through GitHub</h3>
+    <ol>
+      <li>
+        <p>Within <a href="https://github.com/cdlib/pa11y-sample-project">this website's GitHub repository</a>, the image <code>alt</code> attribute was removed within the page <strong>without-errors1.html</strong> and committed to a branch named <strong>feat-remove-alt</strong>.</p>
+        <p>See this commit in the <a href="https://github.com/cdlib/pa11y-sample-project/pull/8/files">Remove image alt attribute</a> pull request.</p>
+      </li>
+      <li>GitHub reported a <a href="https://github.com/cdlib/pa11y-sample-project/runs/2909837066?check_suite_focus=true">Accessibility Test</a> failure with this commit.</li>
+      <li>
+        <p>Notice the <strong>Test with pa11y-ci</strong> item with a red cross. This is the step in the test where pa11y-ci found the missing alt attribute error.</p>
+        <p>When Pa11y finds errors, it stops running (exits with a status failure), which then causes the Accessibility Test in GitHub to fail.</p>
+      </li>
+      <li>Immediately after the Accessibility Test failed, GitHub automatically sent an email to the author of the commit with the subject, <strong>Run failed: Accessibility - feat-remove-alt</strong> with links to GitHub highlighting the failed accessibility check.</li>
+    </ol>
+    <p>This functionality is configured using <a href="https://github.com/cdlib/pa11y-sample-project/blob/main/.github/workflows/accessibility.yml">this GitHub Actions Workflow</a>, which automatically installs this website's repository's dependencies and runs Pa11y in a virtual environment on GitHub each time there is a code push.</p>
   {{/content}}
 {{/extend}}
