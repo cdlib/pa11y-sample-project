@@ -13,5 +13,16 @@ jobs:
           node-version: '14.x'
       - name: Install dependencies
         run: npm ci
-      - name: Test with pa11y-ci
+      - name: Run pa11y-ci tests
         run: npm run test-a11y
+      - name: Read pa11y-ci test results
+        id: pa11yci_results
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: pa11yci-results.txt
+      - name: Check for pa11y-ci errors
+        if: contains(steps.pa11yci_results.outputs.content, 'Errors in')
+        run: |
+          echo "::error::Accessibility errors were found."
+          echo "${{ steps.pa11yci_results.outputs.content }}"
+          exit 1

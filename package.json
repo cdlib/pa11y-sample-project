@@ -14,7 +14,7 @@
     "lintstyles": "stylelint 'styles/*'",
     "github-pages": "gh-pages -d dist",
     "pa11y": "pa11y --runner axe --runner htmlcs",
-    "pa11yci": "mkdir -p pa11y-screencaptures && pa11y-ci --config pa11yci.config.json",
+    "pa11yci": "mkdir -p pa11y-screencaptures && pa11y-ci --config pa11yci.config.json 2>&1 | tee pa11yci-results.txt",
     "test-a11y": "start-server-and-test serve 1234 pa11yci"
   },
   "repository": {
