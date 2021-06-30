@@ -1,5 +1,5 @@
 .DS_Store
 dist
 node_modules
-pa11yci-results.txt
-pa11y-screencaptures
+pa11yci/*.png
+pa11yci/pa11yci-results.txt

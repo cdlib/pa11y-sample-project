@@ -15,7 +15,7 @@
         "height": 800,
         "isMobile": true
       },
-      "screenCapture": "./pa11y-screencaptures/with-errors2-mobile.png"
+      "screenCapture": "pa11yci/with-errors2-mobile.png"
     },
     "http://localhost:1234/without-errors3.html",
     "http://localhost:1234/without-errors4.html",

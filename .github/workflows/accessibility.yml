@@ -19,7 +19,7 @@ jobs:
         id: pa11yci_results
         uses: juliangruber/read-file-action@v1
         with:
-          path: pa11yci-results.txt
+          path: pa11yci/pa11yci-results.txt
       - name: Check for pa11y-ci errors
         if: contains(steps.pa11yci_results.outputs.content, 'Errors in')
         run: |
