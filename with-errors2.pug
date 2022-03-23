@@ -1,9 +1,7 @@
----
-title: Document Structure | Examples With Errors
----
+//- title: Document Structure | Examples With Errors
 
-{{#extend "base"}}
-  {{#content "maincontent"}}
+extends templates/base.pug
+block maincontent
     <h2>Examples With Errors</h2>
     <h3>Document Structure</h3>
     <p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Ullam voluptatibus illo ad, aspernatur omnis at neque, maxime praesentium sit nulla deleniti odio, nemo explicabo? Ipsa magni culpa pariatur rerum voluptas.</p>
@@ -17,5 +15,3 @@ title: Document Structure | Examples With Errors
     </div>
     <hr>
     <p>These headings are out of order.</p>
-  {{/content}}
-{{/extend}}

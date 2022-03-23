@@ -1,44 +1,40 @@
----
-title: Table Headers | Examples With Errors
----
+//- title: Table Headers | Examples Without Errors
 
-{{#extend "base"}}
-  {{#content "maincontent"}}
-    <h2>Examples With Errors</h2>
+extends templates/base.pug
+block maincontent
+    <h2>Examples Without Errors</h2>
     <h3>Table Headers</h3>
     <table class="c-table">
       <tr>
-        <th>Filename</th>
-        <th>Status</th>
-        <th>URL</th>
-        <th>Type</th>
+        <th scope="col">Filename</th>
+        <th scope="col">Status</th>
+        <th scope="col">URL</th>
+        <th scope="col">Type</th>
       </tr>
       <tr>
-        <th>prelim_findings</th>
+        <th scope="row">prelim_findings</th>
         <td>New</td>
         <td>https://usercontent.example.com/files/...</td>
         <td>PDF</td>
       </tr>
       <tr>
-        <th>DraftOrder</th>
+        <th scope="row">DraftOrder</th>
         <td>Archived</td>
         <td>https://filelocker.example.com/files/...</td>
         <td>DOC</td>
       </tr>
       <tr>
-        <th>debut-files</th>
+        <th scope="row">debut-files</th>
         <td>Archived</td>
         <td>https://box.example.com/files/...</td>
         <td>ZIP</td>
       </tr>
       <tr>
-        <th>logos</th>
+        <th scope="row">logos</th>
         <td>New</td>
         <td>https://dochoarder.example.com/files/...</td>
         <td>SVG</td>
       </tr>
     </table>
     <hr>
-    <p>This table is missing table header <code>scope</code> attributes for associating rows and columns with data elements.</p>
-  {{/content}}
-{{/extend}}
+    <p>This table contains table header <code>scope</code> attributes for associating rows and columns with data elements.</p>

@@ -1,9 +1,7 @@
----
-title: Document Structure | Examples Without Errors
----
+//- title: Document Structure | Examples Without Errors
 
-{{#extend "base"}}
-  {{#content "maincontent"}}
+extends templates/base.pug
+block maincontent
     <h2>Examples Without Errors</h2>
     <h3>Document Structure</h3>
     <p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Ullam voluptatibus illo ad, aspernatur omnis at neque, maxime praesentium sit nulla deleniti odio, nemo explicabo? Ipsa magni culpa pariatur rerum voluptas.</p>
@@ -13,5 +11,3 @@ title: Document Structure | Examples Without Errors
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptatum doloremque corporis excepturi non provident ipsam itaque eveniet, harum rem beatae cumque eaque quisquam consequuntur quam. Velit ducimus aspernatur, ratione!</p>
     <hr>
     <p>These headings are in the correct order.</p>
-  {{/content}}
-{{/extend}}

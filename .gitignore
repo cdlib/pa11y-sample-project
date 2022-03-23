@@ -1,5 +1,7 @@
 .DS_Store
 dist
+.npmrc
 node_modules
 pa11yci/*.png
 pa11yci/pa11yci-results.txt
+.parcel-cache

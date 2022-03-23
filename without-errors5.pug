@@ -1,9 +1,7 @@
----
-title: Color Contrast - Examples Without Errors
----
+//- title: Color Contrast - Examples Without Errors
 
-{{#extend "base"}}
-  {{#content "maincontent"}}
+extends templates/base.pug
+block maincontent
     <h2>Examples Without Errors</h2>
     <h3>Color Contrast</h3>
     <div class="c-contrast__withouterrors">
@@ -11,5 +9,3 @@ title: Color Contrast - Examples Without Errors
     </div>
     <hr>
     <p>These text and background colors have sufficient contrast.</p>
-  {{/content}}
-{{/extend}}
