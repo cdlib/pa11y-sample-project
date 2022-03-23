@@ -1,9 +1,5 @@
----
-title:
----
-
-{{#extend "base"}}
-  {{#content "maincontent"}}
+extends templates/base.pug
+block maincontent
     <h2>A Website to Test with Pa11y</h2>
     <h3>Testing One Page at a Time</h3>
     <p>These examples can be followed by installing <a href="https://github.com/pa11y/pa11y">Pa11y</a> globally or as a dependency into a project.</p>
@@ -50,5 +46,3 @@ title:
       <li>Immediately after the Accessibility Test failed, GitHub automatically sent an email to the author of the commit with the subject, <strong>Run failed: Accessibility - feat-remove-img-alt</strong> with links to GitHub highlighting the failed accessibility check.</li>
     </ol>
     <p>This functionality is configured using <a href="https://github.com/cdlib/pa11y-sample-project/blob/main/.github/workflows/accessibility.yml">this GitHub Actions Workflow</a>, which automatically installs this website's repository's dependencies and runs Pa11y in a virtual environment on GitHub each time there is a code push.</p>
-  {{/content}}
-{{/extend}}
