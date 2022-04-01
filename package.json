@@ -54,6 +54,11 @@
     "fa-solid/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/solid/$1"
   },
   "browserslist": "defaults",
+  "@parcel/transformer-css": {
+    "drafts": {
+      "customMedia": true
+    }
+  },
   "stylelint": {
     "defaultSeverity": "warning",
     "extends": [
