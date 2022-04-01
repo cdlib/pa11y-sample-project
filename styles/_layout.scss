@@ -3,7 +3,7 @@
 body {
   --grid-rows: auto auto 1fr auto;
 
-  @media (min-width: 40rem) {
+  @media (--largescreen) {
     --grid-columns: auto 1fr;
     --grid-rows: auto 1fr auto;
     --header-column: -1 / 1;

@@ -32,3 +32,5 @@
   --space-base: 1rem;
   --space-md: calc(var(--space-base) * 2);
 }
+
+@custom-media --largescreen (min-width: 40rem);
