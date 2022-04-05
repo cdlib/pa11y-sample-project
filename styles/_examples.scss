@@ -51,11 +51,12 @@
 }
 
 .c-mobiletest {
-  --display: block;
+  display: block;
+}
 
-  @media (--largescreen) {
-    --display: none;
+@media (--largescreen) {
+
+  .c-mobiletest {
+    display: none;
   }
-
-  display: var(--display);
 }
