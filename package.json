@@ -31,7 +31,6 @@
     "@parcel/optimizer-data-url": "^2.4.0",
     "@parcel/transformer-inline-string": "^2.4.0",
     "@parcel/transformer-pug": "^2.4.0",
-    "@parcel/transformer-sass": "^2.4.0",
     "del-cli": "^4.0.1",
     "gh-pages": "^3.2.3",
     "modern-normalize": "^1.1.0",

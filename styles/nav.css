@@ -3,7 +3,7 @@
 .c-nav {
   padding-inline-start: var(--space-md);
 
-  ul {
+  & ul {
     margin-block-start: 0;
     margin-block-end: 0;
 
@@ -12,18 +12,18 @@
     }
   }
 
-  li {
+  & li {
 
     &:not(:last-child) {
       margin-block-end: var(--space-base);
     }
   }
 
-  a {
+  & a {
     color: var(--color-blue);
   }
 
-  h2 {
+  & h2 {
     font-size: 1em;
     font-weight: 500;
 

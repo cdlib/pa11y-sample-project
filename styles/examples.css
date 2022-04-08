@@ -11,8 +11,8 @@
 .c-table {
   margin-block-end: var(--space-base);
 
-  th,
-  td {
+  & th,
+  & td {
     padding: var(--space-base);
     border: 1px solid var(--color-black);
     text-align: start;
@@ -22,15 +22,15 @@
 .c-input {
   margin-block-end: var(--space-md);
 
-  label {
+  & label {
     font-weight: 600;
   }
 
-  input {
+  & input {
     width: 15rem;
   }
 
-  textarea {
+  & textarea {
     width: 15rem;
     height: 10rem;
     vertical-align: top;
@@ -52,11 +52,8 @@
 
 .c-mobiletest {
   display: block;
-}
 
-@media (--largescreen) {
-
-  .c-mobiletest {
+  @media (--largescreen) {
     display: none;
   }
 }

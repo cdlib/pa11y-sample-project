@@ -1,23 +1,23 @@
 /* Base */
 
-@use './node_modules/modern-normalize/modern-normalize.css';
+@import '../node_modules/modern-normalize/modern-normalize.css';
 
 /* Elements */
 
-@use 'elements';
+@import 'elements.css';
 
 /* Components */
 
-@use 'examples';
-@use 'footer';
-@use 'header';
-@use 'maincontent';
-@use 'nav';
-@use 'skipnav';
+@import 'examples.css';
+@import 'footer.css';
+@import 'header.css';
+@import 'maincontent.css';
+@import 'nav.css';
+@import 'skipnav.css';
 
 /* Layout */
 
-@use 'layout';
+@import 'layout.css';
 
 /* Global Variables */
 
