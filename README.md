@@ -8,9 +8,13 @@ View at: https://cdlib.github.io/pa11y-sample-project
 
 ## Installation
 
-Requires Node, npm.
+Requires Node, npm and Font Awesome Pro token
 
-Run `npm install`
+1. Add the Font Awesome Pro token as a [GitHub Actions secret](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-Actions-Secrets-Example-Token-Tutorial) named `FONTAWESOME_TOKEN`.
+
+2. Add a **.npmrc** file within the project root using the [Per-Project](https://fontawesome.com/v5/docs/web/setup/use-package-managers#per-project) settings for Font Awesome Pro, including your token. This file is automatically ignored by Git and should not be committed.
+
+3. Run `npm install`
 
 ## Developing
 
