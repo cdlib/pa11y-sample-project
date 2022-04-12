@@ -9,6 +9,7 @@
 /* Components */
 
 @import 'examples.css';
+@import 'finding.css';
 @import 'footer.css';
 @import 'header.css';
 @import 'maincontent.css';
@@ -26,10 +27,12 @@
   --color-blue: hsl(240deg 100% 40%);
   --color-gray-light: hsl(0deg 0% 95%);
   --color-gray-dark: hsl(0deg 0% 70%);
+  --color-green: hsl(120deg 100% 30%);
   --color-orange: hsl(30deg 100% 50%);
   --color-red: hsl(0deg 100% 30%);
   --color-white: hsl(0deg 0% 100%);
   --space-base: 1rem;
+  --space-sm: calc(var(--space-base) / 2);
   --space-md: calc(var(--space-base) * 2);
 }
 
