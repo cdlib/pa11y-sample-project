@@ -25,8 +25,7 @@ code {
 }
 
 hr {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-block: 1em;
   border-top: 1px solid var(--color-gray-dark);
   border-right: 0;
   border-bottom: 0;

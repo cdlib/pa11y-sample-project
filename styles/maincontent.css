@@ -1,8 +1,7 @@
 /* Main Content */
 
 .c-maincontent {
-  padding-inline-start: var(--space-md);
-  padding-inline-end: var(--space-md);
+  padding-inline: var(--space-md);
 
   /* remove top margin from the first element: */
 
