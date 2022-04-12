@@ -20,7 +20,7 @@ Requires Node, npm and Font Awesome Pro token
 
 Run `npm run serve`
 
-This will watch and compile **.pug** and **/styles/.scss** files as you work on them.
+This will watch and compile **.pug** and **/styles/.css** files as you work on them.
 
 This project's website will be served locally at http://localhost:1234.
 
