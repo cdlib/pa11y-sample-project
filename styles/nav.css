@@ -1,21 +1,16 @@
 /* Navigation */
 
 .c-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-base);
   padding-inline-start: var(--space-md);
 
   & ul {
-    margin-block: 0;
-
-    &:not(:last-child) {
-      margin-block-end: var(--space-md);
-    }
-  }
-
-  & li {
-
-    &:not(:last-child) {
-      margin-block-end: var(--space-base);
-    }
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-base);
+    margin: 0;
   }
 
   & a {
@@ -23,11 +18,12 @@
   }
 
   & h2 {
+    margin: 0;
     font-size: 1em;
     font-weight: 500;
 
-    &:first-child {
-      margin-block-start: 0;
+    &:not(:first-child) {
+      margin-block-start: var(--space-base);
     }
   }
 }
