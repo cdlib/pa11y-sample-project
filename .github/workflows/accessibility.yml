@@ -2,7 +2,7 @@ name: Accessibility
 on: push
 jobs:
   test:
-    name: Test
+    name: Accessibility Audit
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -17,16 +17,5 @@ jobs:
           npm config set '@fortawesome:registry=https://npm.fontawesome.com/'
           npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONTAWESOME_TOKEN }}"
           npm ci
-      - name: Run pa11y-ci tests
+      - name: Run pa11y-ci test
         run: npm run test-a11y
-      - name: Read pa11y-ci test results
-        id: pa11yci_results
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: pa11yci/pa11yci-results.txt
-      - name: Report pa11y-ci errors
-        if: contains(steps.pa11yci_results.outputs.content, 'Errors in')
-        run: |
-          echo "::error::Accessibility errors were found."
-          echo "${{ steps.pa11yci_results.outputs.content }}"
-          exit 1
