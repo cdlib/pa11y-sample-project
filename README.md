@@ -1,5 +1,7 @@
 # Pa11y Sample Project
 
+**This repository is no longer used or maintained and is now archived.**
+
 [![Accessibility](https://github.com/cdlib/pa11y-sample-project/actions/workflows/accessibility.yml/badge.svg)](https://github.com/cdlib/pa11y-sample-project/actions/workflows/accessibility.yml)
 
 A demonstration of the [Pa11y](https://github.com/pa11y/pa11y) accessibility tool, including sample web pages with and without accessibility errors to test with Pa11y.
